@@ -1,1 +1,28 @@
-# Standard library launcher
+# ==============================================================================
+# LicenseGuard — Core Dependencies
+# ==============================================================================
+
+# --- License Analysis & Legal Parsing ---
+license-expression>=30.2.0    # Parsing, normalizing, and comparing SPDX license expressions
+scancode-toolkit>=32.0.0      # Engine for precise file-level license and copyright detection
+spdx-tools>=0.8.0              # Reading, generating, and validating SPDX SBOM documents
+
+# --- Dependency Tree & Package Parsing ---
+pip-requirements-parser>=32.0.0  # Parsing requirements.txt files and constraints
+packvers>=21.3.0                 # Packaging format utilities and specifier matching
+importlib-metadata>=6.8.0        # Introspecting installed package metadata
+
+# --- Data Validation & Configuration ---
+pydantic>=2.5.0,<3.0.0        # Data validation and schema enforcement for policy files
+pyyaml>=6.0.1                  # Reading policy configurations (.licenseguard.yml)
+
+# --- Web Engine & External Metadata API ---
+requests>=2.31.0,<3.0.0        # Fetching license data from PyPI, npm, or GitHub APIs
+urllib3>=2.0.7                 # Secure HTTP transport and connection pooling
+
+# --- CLI & UI Output Formatting ---
+rich>=13.7.0                   # Terminal formatting, progress bars, and license tables
+click>=8.1.7                   # Command-line interface creation
+
+# --- Testing & Quality Assurance ---
+pytest>=7.4.0                  # Unit test framework
