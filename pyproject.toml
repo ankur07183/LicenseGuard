@@ -1,0 +1,4 @@
+[project]
+name="licenseguard"
+version="24.0.0"
+description="Open Source License Scanner"
